@@ -10,3 +10,6 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+puts "Provide a store name: "
+@userstore = gets.chomp
+puts Store.create(:name => "#{@userstore}").errors.messages
